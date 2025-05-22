@@ -1,0 +1,73 @@
+.experience-section {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 40px 10%;
+  padding: 20px;
+}
+
+.experience-section .banner {
+  background-color: rgba(15, 150, 150, 0.753);
+  padding: 40px;
+  margin: 50px 80px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+.experience-container {
+  padding: 20px;
+  display: flex;
+}
+
+.experience-container h1 {
+  font-size: 2rem;
+  margin-right: 20px;
+  white-space: nowrap;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+
+.experience-content .right-section,
+.experience-content .left-section {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+}
+
+.experience-content .right-section .upper,
+.experience-content .left-section .upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+  color: rgb(78, 75, 75);
+}
+
+.experience-content .right-section .upper i,
+.experience-content .left-section .upper i {
+  background-color: rgba(128, 0, 128, 0.685);
+  color: white;
+  padding: 10px;
+  border-radius: 100%;
+  font-size: 12px;
+}
+
+.experience-content .right-section .bottom,
+.experience-content .left-section .bottom {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.experience-content .right-section .bottom .num,
+.experience-content .left-section .bottom .num {
+  color: rgb(78, 75, 75);
+}

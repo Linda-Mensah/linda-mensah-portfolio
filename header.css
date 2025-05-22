@@ -1,0 +1,53 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 12ppx;
+  background-color: #f4f4f4;
+  z-index: 1000;
+  color: white;
+}
+
+nav {
+  background-color: black;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  border-radius: 25px;
+  margin: 5px 5%;
+}
+
+header nav img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: rgb(108, 182, 182);
+  padding: 4px;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 12px;
+}
+
+header ul li {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+header ul li:hover,
+header ul li span:hover {
+  color: darkorange;
+  cursor: pointer;
+}
+
+header ul li span {
+  color: darkcyan;
+  font-weight: bold;
+}
