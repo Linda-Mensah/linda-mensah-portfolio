@@ -1,13 +1,15 @@
 .selected-work {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 30px;
   margin-left: 50px;
-  background-color: #f4f4f4;
+  margin-right: 50px;
+  background-color: rgba(0, 139, 139, 0.075);
 }
 
 .selected-work .left-section {
   margin-left: 50px;
+  margin-right: 50px;
 }
 
 .selected-work .section-title {
@@ -15,6 +17,7 @@
   position: relative;
   font-size: 2rem;
   margin-bottom: 2rem;
+  margin-top: 4rem;
 }
 
 .selected-work .section-title .title-shape {
@@ -51,10 +54,8 @@
 .companies h5 {
   margin-top: 20px;
   margin-bottom: 3rem;
-  white-space: nowrap;
+  white-space: wrap;
   font-size: 1.25rem;
-  font-family: "Tangerine", "Roboto";
-  font-style: italic;
 }
 
 .companies .company {
