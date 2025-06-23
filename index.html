@@ -12,17 +12,12 @@
     <link rel="stylesheet" href="skills-section.css" />
     <link rel="stylesheet" href="contact-section.css" />
     <link rel="stylesheet" href="footer.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Questrial&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -41,9 +36,11 @@
         </div>
 
         <ul>
-          <li><span>Home</span></li>
+          <a href="#home">
+            <li><span>Home</span></li></a
+          >
+
           <li>About</li>
-          <li>Projects</li>
           <li>Skills</li>
           <li>Experience</li>
           <li>Contact</li>
@@ -51,14 +48,14 @@
       </nav>
     </header>
 
-    <section class="about-section">
+    <section id="home" class="about-section">
       <div class="left-section">
         <span class="available">&#10003; AVAILABLE FOR WORK</span>
         <h1>Hi, I'm a frontend developer</h1>
         <p>
           I specialize in building responsive, user-friendly web interfaces
-          using modern technologies like HTML, CSS, JavaScript, and frameworks
-          such as React and Vue. <br />
+          using modern technologies HTML, CSS, Tailwind CSS, JavaScript, and
+          React. <br />
           <br />I’m passionate about creating seamless user experiences and
           turning complex problems into intuitive solutions.
         </p>
@@ -113,8 +110,26 @@
       data-aos="zoom-in"
       data-aos-duration="1500"
       data-aos-easing="ease-in-out"
-      data-aos-delay="300"
+      data-aos-delay="200"
     >
+      <h2 class="title-shape-container">
+        Designing with Purpose
+        <span class="title-shape">
+          <svg
+            viewBox="0 0 100 10"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M 0,5 C 25,0 75,10 100,5"
+              fill="none"
+              stroke="orange"
+              stroke-width="2"
+            />
+          </svg>
+        </span>
+      </h2>
+
       <div class="banner">
         <p>
           My mission is to craft intuitive, responsive, and accessible user
@@ -123,129 +138,125 @@
           with efficient code, making the web a better place—one component at a
           time.
         </p>
-        <div class="title-shape">
-          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1"
-            ></path>
-          </svg>
-        </div>
       </div>
-      <div class="experience-container">
-        <h1>
-          How Can I <br />
-          Assist You?
-        </h1>
-        <div class="experience-content">
-          <div class="left-section">
-            <div class="upper">
-              <i class="fa-solid fa-code"></i>
-              <p>
-                I’ve built responsive and accessible interfaces, focusing on
-                translating designs into seamless user experiences. <br />
-                <br />Whether it's a sleek and modern site or more complex
-                platforms, I prioritize performance, clean code, and
-                mobile-first design.
-              </p>
-            </div>
-            <div class="bottom">
-              <span>Frontend Development</span>
-              <span class="num">01</span>
-            </div>
-          </div>
-          <div class="right-section">
-            <div class="upper">
-              <i class="fa-solid fa-user-gear"></i>
-              <p>
-                As a tech project manager, I have led cross-functional teams
-                from planning to deployment. <br />
-                <br />
-                I have coordinated sprints, balanced user needs with technical
-                priorities, and ensured smooth delivery of scalable products for
-                real-world use cases.
-              </p>
-            </div>
-            <div class="bottom">
-              <span>Project Management</span>
-              <span class="num">02</span>
-            </div>
-          </div>
+    </section>
+    <section class="assist-section">
+      <h2 class="section-title">
+        How Can I Assist You?
+        <span class="title-shape">
+          <svg
+            viewBox="0 0 100 10"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M 0,5 C 25,0 75,10 100,5"
+              fill="none"
+              stroke="orange"
+              stroke-width="2"
+            />
+          </svg>
+        </span>
+      </h2>
+
+      <div class="assist-grid">
+        <div class="assist-card">
+          <span class="icon">💻</span>
+          <h3>Frontend Dev</h3>
+          <p>Clean, responsive UIs. Fast, accessible, mobile-first builds.</p>
+        </div>
+
+        <div class="assist-card">
+          <span class="icon">🧩</span>
+          <h3>Project Management</h3>
+          <p>Cross-functional leadership, sprint planning & smooth delivery.</p>
         </div>
       </div>
     </section>
 
-    <section class="skills-flip-section">
-      <!-- Frontend Card -->
-      <div class="flip-card">
-        <div class="flip-inner">
-          <div class="flip-front">
-            <h2>Frontend</h2>
-          </div>
-          <div class="flip-back">
-            <div class="skills-list">
-              <div class="skill-item">
-                <i class="fa-brands fa-html5"></i>
-                <p>HTML</p>
-              </div>
-              <div class="skill-item">
-                <i class="fa-brands fa-css3-alt"></i>
-                <p>CSS</p>
-              </div>
-              <div class="skill-item">
-                <i class="fa-brands fa-js"></i>
-                <p>JavaScript</p>
-              </div>
-              <div class="skill-item">
-                <i class="fa-brands fa-react"></i>
-                <p>React</p>
-              </div>
-              <div class="skill-item">
-                <i class="fa-brands fa-git"></i>
-                <p>Git</p>
-              </div>
-              <div class="skill-item">
-                <i class="fa-brands fa-bootstrap"></i>
-                <p>Bootstrap</p>
+    <section class="skills-section">
+      <h2 class="section-title">
+        Web & PM Tools
+        <span class="title-shape">
+          <svg
+            viewBox="0 0 100 10"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M 0,5 C 25,0 75,10 100,5"
+              fill="none"
+              stroke="orange"
+              stroke-width="2"
+            />
+          </svg>
+        </span>
+      </h2>
+
+      <div class="skills-flip-section">
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <h2>Frontend</h2>
+            </div>
+            <div class="flip-back">
+              <div class="skills-list">
+                <div class="skill-item">
+                  <i class="fa-brands fa-html5"></i>
+                  <p>HTML</p>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-brands fa-css3-alt"></i>
+                  <p>CSS</p>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-brands fa-js"></i>
+                  <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-brands fa-react"></i>
+                  <p>React</p>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-brands fa-git"></i>
+                  <p>Git</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Project Management Card -->
-      <div class="flip-card">
-        <div class="flip-inner">
-          <div class="flip-front">
-            <h2>Project Management</h2>
-          </div>
-          <div class="flip-back">
-            <div class="skills-list">
-              <div class="skill-item">
-                <i class="fa-brands fa-jira"></i>
-                <p>Jira</p>
-              </div>
-              <div class="skill-item">
-                <i class="fa-brands fa-confluence"></i>
-                <p>Confluence</p>
-              </div>
-              <div class="skill-item">
-                <i class="fa-brands fa-trello"></i>
-                <p>Trello</p>
-              </div>
-              <div class="skill-item">
-                <i class="fa-brands fa-slack"></i>
-                <p>Slack</p>
+        <!-- Project Management Card -->
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <h2>Project Management</h2>
+            </div>
+            <div class="flip-back">
+              <div class="skills-list">
+                <div class="skill-item">
+                  <i class="fa-brands fa-jira"></i>
+                  <p>Jira</p>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-brands fa-confluence"></i>
+                  <p>Confluence</p>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-brands fa-trello"></i>
+                  <p>Trello</p>
+                </div>
+                <div class="skill-item">
+                  <i class="fa-brands fa-slack"></i>
+                  <p>Slack</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Soft Skills Card -->
-      <!-- <div class="flip-card full-width">
+        <!-- Soft Skills Card -->
+        <!-- <div class="flip-card full-width">
         <div class="flip-inner">
           <div class="flip-front">
             <h2>Soft Skills</h2>
@@ -276,12 +287,13 @@
           </div>
         </div>
       </div> -->
+      </div>
     </section>
 
-    <section class="selected-work">
-      <div class="left-section">
-        <h1 class="section-title">
-          Selected Work
+    <section>
+      <div class="selected-work">
+        <h2 class="section-title">
+          Organizations I've happily worked with
           <span class="title-shape">
             <svg
               viewBox="0 0 100 10"
@@ -296,11 +308,13 @@
               />
             </svg>
           </span>
-        </h1>
-        <!-- Add companies here -->
+        </h2>
+
         <div class="companies">
-          <h5>Organizations I've happily worked with &lt;3</h5>
-          <div class="company">
+          <!-- <h5 class="company-header">
+            Organizations I've happily worked with ❤️
+          </h5> -->
+          <div class="company-list">
             <div class="company-card">
               <i class="fa-solid fa-location-dot"></i>
               <span>Mest Africa, GH</span>
@@ -316,92 +330,128 @@
           </div>
         </div>
       </div>
-      <div class="card-slider">
-        <div id="card1" class="project-card">
-          <a href="https://the-bookshelf-camp.netlify.app/" target="_blank"
-            ><img src="./assets/tbc-thumbnail.png" class="thumbnail"
-          /></a>
-          <div class="project-details">
-            <span class="project-title"
-              ><span>DEVELOPER</span> &#9733; LANDING PAGE</span
+
+      <div class="title-shape-container">
+        <h2 class="section-title">
+          Selected Work
+          <span class="title-shape">
+            <svg
+              viewBox="0 0 100 10"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
             >
-            <span class="project-year">2025</span>
-          </div>
-          <div class="tags">
-            <span class="tag-1">WEB DESIGN</span>
-            <span class="tag-2">RESPONSIVE DESIGN</span>
-          </div>
-          <div class="slider-buttons">
-            <a href="#card4">Prev</a>
-            <a href="#card2">Next</a>
-          </div>
-        </div>
-
-        <div id="card2" class="project-card">
-          <a
-            href="http://gwat.marymountvilademo.digital/app/login"
-            target="_blank"
-            ><img src="./assets/cama-thumbnail.png" class="thumbnail"
-          /></a>
-
-          <div class="project-details">
-            <span class="project-title"
-              ><span>PROJECT MANAGER</span> &#9733; OVAL ADMISSIONS</span
-            >
-            <span class="project-year">2025</span>
-          </div>
-          <div class="tags">
-            <span class="tag-1">WEB PROJECT</span>
-            <span class="tag-2">SCRUM</span>
-          </div>
-          <div class="slider-buttons">
-            <a href="#card1">Prev</a>
-            <a href="#card3">Next</a>
-          </div>
-        </div>
-
-        <div id="card3" class="project-card">
-          <a href="https://camapp.org.uk/" target="_blank">
-            <img src="./assets/cama-thumbnail.png" class="thumbnail"
-          /></a>
-
-          <div class="project-details">
-            <span class="project-title">
-              <span>PROJECT MANAGER</span> &#9733; CARE AGENCY MANAGEMENT
-              APP</span
-            >
-            <span class="project-year">2025</span>
-          </div>
-          <div class="tags">
-            <span class="tag-1">WEB & MOBILE APP</span>
-            <span class="tag-2">QA</span>
-          </div>
-          <div class="slider-buttons">
-            <a href="#card2">Prev</a>
-            <a href="#card4">Next</a>
-          </div>
-        </div>
-
-        <div id="card4" class="project-card">
-          <a href="https://www.mokoafrika.com/" target="_blank">
-            <img src="./assets/moko-afrika-thumbnail.png" class="thumbnail" />
+              <path
+                d="M 0,5 C 25,0 75,10 100,5"
+                fill="none"
+                stroke="orange"
+                stroke-width="2"
+              />
+            </svg>
+          </span>
+        </h2>
+      </div>
+      <div class="project-grid">
+        <div class="project-card">
+          <a href="https://the-bookshelf-camp.netlify.app/" target="_blank">
+            <img
+              src="./assets/tbc-thumbnail.png"
+              alt="Project 1"
+              class="thumbnail"
+            />
           </a>
-
-          <div class="project-details">
-            <span class="project-title"
-              ><span>PROJECT COORDINATOR</span> &#9733; MOKO AFRIKA</span
-            >
-            <span class="project-year">2024</span>
-          </div>
-          <div class="tags">
-            <span class="tag-1">FINTECH</span>
-            <span class="tag-2">TEAM COORDINATION</span>
-          </div>
-          <div class="slider-buttons">
-            <a href="#card3">Prev</a>
-            <a href="#card1">Next</a>
+          <div class="info">
+            <h3><span>Frontend</span> · Landing Page</h3>
+            <div class="tags">
+              <span>Web Design</span>
+              <span>Responsive</span>
+            </div>
           </div>
         </div>
+
+        <div class="project-card">
+          <a href="https://mf-library.netlify.app/" target="_blank">
+            <img
+              src="./assets/mf-lib-thumbnail.png"
+              alt="Project 2"
+              class="thumbnail"
+            />
+          </a>
+          <div class="info">
+            <h3><span>Frontend</span> · Library Management App</h3>
+            <div class="tags">
+              <span>Web App</span>
+              <span>Responsive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <a href="https://product-mgmnt.netlify.app/" target="_blank">
+            <img
+              src="./assets/product-management-thumbnail.png"
+              alt="Project 4"
+              class="thumbnail"
+            />
+          </a>
+          <div class="info">
+            <h3><span>Frontend</span> · Product Management App</h3>
+            <div class="tags">
+              <span>Web App</span>
+              <span>Responsive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <a href="https://product-mgmnt.netlify.app/" target="_blank">
+            <img
+              src="./assets/hotel-landing-thumbnail.png"
+              alt="Project 5"
+              class="thumbnail"
+            />
+          </a>
+          <div class="info">
+            <h3><span>Frontend</span> · Landing Page</h3>
+            <div class="tags">
+              <span>Clean UI</span>
+              <span>Responsive</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="project-card">
+          <a href="https://camapp.org.uk/" target="_blank">
+            <img
+              src="./assets/cama-thumbnail.png"
+              alt="Project 6"
+              class="thumbnail"
+            />
+          </a>
+          <div class="info">
+            <h3><span>Project Manager</span> · Care Agency Management App</h3>
+            <div class="tags">
+              <span>Web & Mobile</span>
+              <span>QA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <a href="https://www.mokoafrika.com/" target="_blank">
+            <img
+              src="./assets/moko-afrika-thumbnail.png"
+              alt="Project 4"
+              class="thumbnail"
+            />
+          </a>
+          <div class="info">
+            <h3><span>Project Coordinator</span> · Moko Afrika</h3>
+            <div class="tags">
+              <span>Fintech</span>
+              <span>Teamwork</span>
+            </div>
+          </div>
+        </div> -->
       </div>
     </section>
 
@@ -436,7 +486,7 @@
           <small>FIND ME ON SOCIALS!</small>
           <p>
             📷
-            <a href="https://instagram.com/yourprofile" target="_blank"
+            <a href="https://www.instagram.com/linsah_/" target="_blank"
               >Instagram</a
             >
             | 💼

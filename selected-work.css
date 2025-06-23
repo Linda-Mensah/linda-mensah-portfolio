@@ -1,163 +1,162 @@
 .selected-work {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
-  background-color: rgba(0, 139, 139, 0.075);
+  padding: 4rem 2rem;
+  background-color: #fdfdfd;
+  color: #1a1a1a;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.selected-work .left-section {
-  margin-left: 50px;
-  margin-right: 50px;
+.title-shape-container {
+  text-align: center;
+  margin-top: 3rem;
 }
 
-.selected-work .section-title {
-  display: inline-block;
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
   position: relative;
-  font-size: 2rem;
   margin-bottom: 2rem;
-  margin-top: 4rem;
+  display: inline-block;
+  color: #333;
 }
 
-.selected-work .section-title .title-shape {
+.title-shape {
   display: block;
-  width: 100%;
+  margin-top: 0.5rem;
   height: 10px;
-  margin-top: 4px;
+  width: 100px;
 }
 
-.seleted-work .section-title .title-shape svg {
+.title-shape svg {
   width: 100%;
   height: 100%;
+  display: block;
 }
 
-.project-details {
+.company-header {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.company-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.company-card {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  background-color: #f4f4f4;
-  padding: 1rem;
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  transition: transform 0.3s ease;
 }
 
-.project-details .project-title,
-.project-year {
-  font-size: 12px;
-  font-weight: bold;
+.company-card i {
+  color: orange;
+  margin-right: 0.75rem;
+  font-size: 1.1rem;
 }
 
-.project-details .project-title span {
-  font-size: 1.5rem;
+.company-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.companies {
+  margin-bottom: 3rem;
 }
 
 .companies h5 {
-  margin-top: 20px;
-  margin-bottom: 3rem;
-  white-space: wrap;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
 }
 
-.companies .company {
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 50px;
-}
-
-.companies .company .company-card {
+.company {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  white-space: nowrap;
-  column-gap: 15px;
-  color: darkcyan;
-  font-weight: 600;
-  background-color: rgba(0, 139, 139, 0.199);
-  padding: 15px;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
-.companies .company .company-card i {
-  color: black;
-  font-weight: 700;
+.company-card {
+  font-size: 0.95rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  padding: 4rem;
 }
 
 .project-card {
-  display: none;
-  max-width: 600px;
-  margin: auto;
-  padding: 3rem;
-  border-radius: 12px;
-  background: white;
-  transition: opacity 0.15s ease;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card a:hover {
-  opacity: 70%;
-  position: relative;
-  top: -4px;
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
-.project-card:target {
-  display: block;
+.project-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
 }
-
-/* Show first card by default */
-#card1:target ~ .project-card#card1,
-body:not(:has(:target)) .project-card#card1 {
-  display: block;
-}
-
 .thumbnail {
   width: 100%;
-  border-radius: 8px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.info {
+  padding: 1.2rem;
+}
+
+.info h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.info h3 span {
+  color: orange;
+  font-weight: 700;
+}
+
+.info p {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .tags span {
-  margin-right: 8px;
-  background: #eee;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 0.8rem;
-}
-
-.slider-buttons {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.slider-buttons a {
-  padding: 0.5rem 1rem;
-  margin: 0 0.5rem;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  background-color: darkcyan;
-  padding: 12px;
-  transition: background-color 0.15s ease;
-}
-
-.slider-buttons a:hover {
-  background-color: orangered;
-  cursor: pointer;
-}
-
-.tag-1 {
-  width: fit-content;
-  background-color: rgba(0, 139, 139, 0.199);
-  padding: 6px 8px;
-  font-size: 12px;
-  color: darkcyan;
-  font-weight: 600;
-  border-radius: 20px;
-}
-
-.tag-2 {
-  width: fit-content;
-  background-color: #f4f4f4;
-  padding: 8px;
-  font-size: 12px;
-  color: orangered;
-  font-weight: 600;
-  border-radius: 20px;
+  font-size: 0.7rem;
+  background-color: #f0f0f0;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  color: #333;
+  font-weight: 500;
 }
